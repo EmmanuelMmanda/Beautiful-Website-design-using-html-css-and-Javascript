@@ -2,23 +2,23 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: sticky; */
   left: 0;
   top: 0;
   width: 100%;
   padding: 10px;
-  border-bottom: 0.3px solid var(--color-primary);
+  border-bottom: 0.3px solid var(--link-color);
+  background-color: var(--color-deco);
 }
 nav .logo {
   flex: 1;
   display: inline-block;
   font-size: 34px;
-  color: var(--text-lighten);
+  color: var(--text-deco);
   text-align: left;
   font-weight: 800;
 }
 nav .logo span {
-  color: var(--text-lighten);
+  color: var(--text-deco);
   font-family: sans-serif;
   font-size: 25px;
   font-weight: 800;
@@ -43,6 +43,7 @@ nav .nav-items ul li {
   cursor: pointer;
   border-radius: 30px;
   display: inline-block;
+  color: var(--text-deco);
 }
 
 nav .nav-items ul li a{
@@ -50,22 +51,25 @@ nav .nav-items ul li a{
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
-    color: var(--color-secondary);
+    color: var(--text-deco);
+
 }
 nav .nav-items ul li a:hover{
     padding-left: 30px;
     transition: all 0.5s ease;
-    border-left: 10px solid var(--color-primary);
+    border-left: 10px solid var(--text-deco);
 }
 nav .nav-items ul li a span{
     font-size: 19px;
-    color: var(--text-light);
+    color: var(--text-deco);
+
 }
 nav .nav-items ul li a i{
     font-size: 20px;
     margin-right: 5px;
     display: inline;
-    color: var(--text-light);
+    color: var(--text-deco);
+
 
 }
 nav .contact-button {
@@ -77,7 +81,7 @@ nav .contact-button a {
   display: inline-block;
   text-decoration: none ;
   border: 1px solid var(--border-color);
-  color: var(--text-light);
+  color: var(--text-deco);
   transition: all 0.5s ease;
   background-color: transparent;
 
@@ -89,7 +93,7 @@ nav .contact-button a i{
 }
 nav .contact-button a:hover{
     background-color: var(--color-secondary);
-    color: var(--text-lighten);
+    color: var(--text-deco);
     margin-left: 20px;
     transition: all 0.5s ease;
 
@@ -130,6 +134,23 @@ nav .hamburger span.toggle2{
 }
 nav .hamburger span.togglenone{
    display: none;
+}
+
+.theme{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme i{
+  font-size: 25px;
+  position: absolute;
+}
+.theme i.sun{
+  display: none;
 }
 
 

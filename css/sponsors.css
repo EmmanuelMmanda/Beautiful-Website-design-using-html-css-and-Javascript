@@ -1,0 +1,47 @@
+.sponsors {
+  margin-top: 150px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.sponsors .sponsors-list {
+  padding: 0 40px;
+  width: calc(100%-17px);
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+    margin-right: 20px;
+}
+.sponsors .sponsors-list .list {
+  margin: 20px;
+  width: 150px;
+  height: 70px;
+  display: inline-block;
+  animation: slide 25s ease infinite ;
+}
+.sponsors .sponsors-list .list img{
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(20%);
+  }
+  5% {
+    transform: translateX(-50%);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  15% {
+    transform: translateX(-150%);
+  }
+  20% {
+    transform: translateX(-200%);
+  }
+  25% {
+    transform: translateX(-150%);
+  }
+  
+}

@@ -1,0 +1,116 @@
+footer {
+    position: relative;
+    margin-top: 50px;
+    height: 350px;
+}
+footer .footer{
+    position: absolute;
+    bottom: -10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer .footer-content{
+    background-color: var(--bg-light);
+    width: 100vw;
+    height: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 0.5fr 2.1fr 1.3fr;
+}
+footer .footer .footer-content .about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-evenly;
+}
+footer .footer .footer-content .about-us .info{
+    text-align: center;
+}
+footer .footer .footer-content .about-us .social{
+    padding: 3px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--color-primary);
+}
+
+footer .footer .footer-content .about-us .social i{
+    font-size: 34px;
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--color-light);
+    cursor: pointer ;
+    transition: all 0.5s ease;
+
+}
+footer .footer .footer-content .about-us .social i:hover{
+    background-color: var(--text-deco);
+    color: var(--bg-light);
+    transition: all 0.5s ease;
+}
+footer .footer .footer-content .sitelinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+    gap: 50px;
+}
+footer .footer .footer-content .sitelinks .services,
+footer .footer .footer-content .sitelinks .quicklinks{
+    text-align: left;
+  
+}
+footer .footer .footer-content .sitelinks .services ul,
+footer .footer .footer-content .sitelinks .quicklinks ul{
+    text-decoration: none;
+    list-style-type: none;
+    appearance: none;
+    padding-left: 15px;
+}
+footer .footer .footer-content .sitelinks .services ul li,
+footer .footer .footer-content .sitelinks .quicklinks ul li{
+    padding: 3px;
+    transition: all 0.5s ease;
+}
+footer .footer .footer-content .sitelinks .services ul li:hover,
+footer .footer .footer-content .sitelinks .quicklinks ul li:hover{
+    padding-left: 17px;
+    transition: all 0.5s ease;
+    border-left: 6px solid var(--bg-light);
+    color: var(--text-light);
+
+}
+
+footer .footer .footer-accredition{
+    bottom: 0;
+    width: 100vw;
+    text-align: center;border-top: 1px solid var(--text-deco);
+    background-color: var(--bg-light);
+    padding: 10px 0px;
+}
+
+
+
+/* back to top button */
+.backtotop{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 190;
+    width: 35px;
+    height: 35px;
+    right: 3%;
+    bottom: 2%;
+    background-color: var(--text-deco);
+}
+.backtotop i{
+    font-size: 30px;
+    color: var(--text-deco);
+    color: var(--color-primary);
+    font-weight: bold;
+}

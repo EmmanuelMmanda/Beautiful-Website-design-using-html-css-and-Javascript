@@ -10,37 +10,59 @@
   box-sizing: border-box;
   font-family: "Poppins";
   font-size: 16px;
-  scrollbar-width: thin;
   scroll-behavior: smooth;
-  scrollbar-track-color: var(--text-deco);
+  color: var(--text-deco);
+ scroll-behavior: smooth;
+
   }
 :root {
-  --color-primary: rgb(57, 183, 148);
-  --color-secondary: rgba(0, 175, 198, 0.994);
+  --color-primary: rgb(255, 255, 255);
+  --color-secondary: rgb(227, 227, 227);
   --bg-light: rgb(223, 223, 223);
   --bg-dark: rgb(22, 22, 22);
-  --text-lighten: rgb(255, 255, 255);
-  --text-light: rgb(223, 223, 223);
+  --text-lighten: rgb(26, 24, 24);
+  --text-light: rgb(32, 32, 32);
   --text-dark: rgb(33, 33, 33);
-  --text-darkeen: #000;
+  --text-darken: #000;
   --border-color: rgba(7, 64, 130, 0.632);
   --text-deco: rgb(12, 56, 117);
-
+  --card-color: rgba(214, 222, 247, 0.866);
+  --card-hover: rgb(168, 187, 251);
+  --border-hover-accent: rgba(10, 30, 51, 0.116);
+  --link-color: rgb(13, 25, 136);
 }
 
 body {
   font-family: poppins;
   font-size: 16px;
   width: 100vw;
-  height: 100vh;
   background: linear-gradient(
     to right bottom,
     var(--color-primary),
     var(--color-secondary)
   );
-  overflow-x: hidden;
- 
+  background-repeat: no-repeat;
+  background-size: cover;
+ overflow-x: hidden;
+ transition: all 0.4s ease;
+ position: relative;
+
 }
+/* -===dark mode ==== */
+.dark{
+  --color-primary: rgb(0, 0, 0);
+  --color-secondary: rgb(7, 7, 9);
+  --bg-light: rgb(19, 19, 19);
+  --bg-dark: rgb(16, 10, 10);
+  --text-light: rgb(218, 218, 218);
+  --border-color: rgba(229, 232, 235, 0.632);
+  --text-deco: rgb(192, 192, 192);
+  --card-color: rgba(26, 26, 27, 0.866);
+  --card-hover: rgba(22, 22, 91, 0.866);
+  --border-hover-accent: rgba(28, 44, 130, 0.083);
+  --link-color: rgba(119, 119, 119, 0.866);
+}
+
 a {
   text-decoration: none;
   appearance: none;
@@ -64,4 +86,7 @@ h3{
 }
 h4{
   font-size: 25px;
+}
+a:hover{
+  color: var(--link-color);
 }

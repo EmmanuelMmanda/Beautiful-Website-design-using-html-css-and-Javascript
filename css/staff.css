@@ -1,0 +1,171 @@
+.staff{
+    margin: 20px 0px 50px 0px;
+    height: auto;
+    color: var(--color-deco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.staff-title{
+    text-align: center;
+    padding: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    position: relative;
+}
+.staff .staff-card{
+    width: 320px;
+    height: 400px;
+    margin: 10px;
+    position: relative;
+    background-color: var(--card-color);
+    box-shadow: 3px 5px 40px var(--card-color);
+}
+.staff .staff-card .staff-image{
+    height: 200px;
+}
+.staff .staff-card .staff-image img{
+    object-fit: cover;
+}
+.staff .staff-card .staff-info h4,.staff .staff-card .staff-info h5{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color:  var(--color-deco);
+}
+.staff .staff-card .staff-info .occupation{
+    font-size: 23px;
+    text-align: center;
+}
+.staff .staff-card .staff-info .quote{
+    text-align: center;
+    padding: 20px;
+}
+.staff .staff-card .staff-info .quote::before{
+    content: '"';
+    font-size: 25px;
+    font-weight: bold;
+}
+.staff .staff-card .staff-info .quote::after{
+    content: '"';
+    font-size: 25px;
+    font-weight: bold;
+}
+.staff .staff-card:hover::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    animation: Height 0.5s ease;
+    height: 100%;
+    background-color: var(--border-hover-accent);
+
+}
+.staff .staff-card:hover::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    height: 100%;
+    animation: Width 0.5s ease;
+    background-color: var(--border-hover-accent);
+}
+input.more-toggle{
+    display: none;
+}
+.more-toggle{
+    position: absolute;
+    padding: 10px 40px;
+    top: 100%;
+    left: 45%;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: var(--card-color);
+    cursor: pointer;
+}
+.more-toggle:hover {
+    background-color: var(--border-hover-accent);
+}
+.more-toggle i{
+    font-size: 25px;
+}
+.more-toggle i.active{
+    transform: rotate(180deg);
+}
+.more-card{
+    display: none;
+}
+.card-container input:checked ~ .more-card{
+    transition: all 0.5s ease;
+    display: block;  
+} 
+
+@keyframes Height {
+    from{
+        height: 0%;
+    }to{
+        height: 100%;
+    }
+}
+
+@keyframes Width {
+    from{
+        width: 0%;
+    }to{
+        width: 100%;
+    }
+}
+
+/* mobile responsivenes */
+
+@media (min-width: 240px) {
+    .memberships{
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (min-width: 400px) {
+    .memberships{
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media (min-width: 660px) {
+    .memberships{
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+    }
+    
+}
+@media (min-width: 900px) {
+    .memberships{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    
+}
+@media (min-width: 1200px) {
+    .memberships{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 100px;
+    }
+    
+}
