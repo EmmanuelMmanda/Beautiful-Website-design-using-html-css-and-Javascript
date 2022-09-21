@@ -6,11 +6,9 @@
 }
 .sponsors .sponsors-list {
   padding: 0 40px;
-  width: calc(100%-17px);
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
-  scrollbar-width: thin;
     margin-right: 20px;
 }
 .sponsors .sponsors-list .list {
@@ -18,7 +16,7 @@
   width: 150px;
   height: 70px;
   display: inline-block;
-  animation: slide 25s ease infinite ;
+  animation: slide 45s ease infinite ;
 }
 .sponsors .sponsors-list .list img{
   object-fit: cover;

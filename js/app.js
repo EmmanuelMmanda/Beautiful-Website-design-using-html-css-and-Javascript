@@ -18,20 +18,6 @@ hamburger.addEventListener( 'click', () => {
         navItems.classList.toggle('mobile');
         
 });
-//dark and light theme
-moon.addEventListener( 'click', () => {
-           body.classList.toggle('dark'); 
-           moon.style.display = "none";
-           sun.style.display = "block";
-});
-sun.addEventListener( 'click', () => {
-        body.classList.toggle('dark'); 
-        sun.style.display = "none";
-        moon.style.display = "block";
-});
-
-
-
 //staff cards selectors
 
 const Moretoggler = document.querySelector('.more-toggle');

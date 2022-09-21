@@ -148,6 +148,7 @@ nav .hamburger span.togglenone{
 .theme i{
   font-size: 25px;
   position: absolute;
+  right: 40px;
 }
 .theme i.sun{
   display: none;
@@ -164,8 +165,8 @@ nav .hamburger span.togglenone{
     height: 10vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-top: 80px;
     animation: height 0.5s ease-out ;
     height: 100vh;
     z-index: 100;
@@ -199,5 +200,6 @@ nav .hamburger span.togglenone{
     nav .logo{
         text-align: left;
     }
+   
 }
 

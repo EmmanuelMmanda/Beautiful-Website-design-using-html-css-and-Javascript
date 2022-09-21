@@ -134,36 +134,35 @@ input.more-toggle{
 /* mobile responsivenes */
 
 @media (min-width: 240px) {
-    .memberships{
+    .card-container{
         gap: 30px;
         grid-template-columns: 1fr;
     }
     
 }
-
 @media (min-width: 400px) {
-    .memberships{
+    .card-container{
         gap: 30px;
         grid-template-columns: 1fr;
     }
     
 }
 @media (min-width: 660px) {
-    .memberships{
+    .card-container{
         grid-template-columns: 1fr 1fr;
         gap: 70px;
     }
     
 }
 @media (min-width: 900px) {
-    .memberships{
+    .card-container{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
     }
     
 }
 @media (min-width: 1200px) {
-    .memberships{
+    .card-container{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 100px;
     }
